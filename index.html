@@ -5,44 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Primera Pagina Web</title>
     <style>
-        body {
-            font-family: sans-serif;
-            background-color: #f0f0f0;
-            color: #333; 
-            margin: 0; 
-            padding: 20px; 
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            min-height: 100vh; 
-        }
-
-        h1 {
-            color: #08145f; 
-            margin-bottom: 10px;
-            animation: move 2s infinite;
-        }
-
-        @keyframes move {
-            0% { transform: translateX(0); }
-            50% { transform: translateX(10px); }
-            100% { transform: translateX(0); }
-        }
-
-        p {
-            margin-bottom: 20px;
-            text-align: center; 
-        }
-
-        img {
-            border-radius: 8px; 
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-        }
-    </style>
+      .encabezado {
+          border: 2px solid #000;
+          padding: 10px;
+          margin: 10px;
+      }
+  </style>
 </head>
+
 <body>
-    <h1>¡Hola!</h1>
-    <p>Me gusta ver documentales</p>
-    <img src="https://www.nuevamujer.com/resizer/ORY1hDRZBKC2Ozyg2XNRR52o5gA=/1600x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/PZNJVI3UURGA7CN6USJGH3OTW4.jpg" alt="Imagen de documental" width="300">
+  <header>
+    <div class="encabezado">
+      <h1>Pasatiempos</h1>
+      <nav>
+          <a href="documentales.html">Documentales</a>
+          <a href="musica.html">Musica</a>
+          <a href="shopping.html">Shopping</a>
+          <a href="videojuegos.html">Videojuegos</a>
+          <a href="otros.html">Otros</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>   
+      <header>
+        <h2>Perfil Personal</h2>
+        <p>¡Hola! Mi nombre Aliskei soy es una estudiante venezolana proveniente del estado Anzoátegui, actualmente estoy cursando mis estudios en la Universidad Autónoma de Nuevo León, México. A pesar de estar lejos de casa, sigo disfrutando de mis pasatiempos favoritos. Me encanta sumergirse en el mundo de los documentales, explorar nuevos géneros musicales, ir de compras y relajarme jugando videojuegos, entre otras cosas.</p>
+      </header>
+
+      <figure>
+        <img src="https://images.pexels.com/photos/10599961/pexels-photo-10599961.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1" alt="tv y cassettes">
+        <figcaption>Persona colocando un cassette</figcaption>
+      </figure> 
+
+      <section>
+        <h2>Documentales</h2>
+        <p>Los documentales que más me gustan ver son sobre historia y crimenes reales</p>
+      <ul>
+        <li>Punto de inflexión: El 11s y la guerra contra el terrorismo</li>
+        <li>Accidente nuclear</li>
+        <li>Cacería implacable el atentado del maratón de Boston</li>
+        <li>Conversaciones con asesinos</li>
+      </ul>
+      </section>
+      <footer>
+        <hr>
+      </footer>
+    </article>
+  </main>
+
+  <aside>
+    <a href="https://www.netflix.com/mx/">Sitio documentales</a>
+  </aside>
+
+  <footer>
+    <address>
+      <p>Pagina web desarrollada por: AJMA</p>
+      <p>Redes sociales:</p>
+      <a href="ligaaqui">Facebook</a>
+      <a href="ligaaqui">Instagram</a>
+  </address>
+  </footer>
 </body>
 </html>
